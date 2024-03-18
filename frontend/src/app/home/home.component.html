@@ -1,0 +1,22 @@
+
+<div class="container-fluid h-100">
+    <div class = "row w-100">
+        <div class="col">
+            <div id="demo" class="carousel slide" data-bs-rie="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item-active">
+                        <img src="https://static.change.org/brand-pages/hero%20images/hero-impact.jpg" alt="Los Angeles" class="d-block"
+                             style="width: 100%">
+                        <div class="carousel-caption">
+                            <h3>La mayor plataforma del mundo</h3>
+                            <p>485.044.407 personas que pasan a la acción</p>
+                            <button *ngIf="isSignedIn" type="button" class="btn btn-danger center-block "><a *ngIf="isSignedIn" routerLink="/peticion/create" class="text-white text-decoration-none">Inicia una peticion</a></button>
+                            <button *ngIf="!isSignedIn" type="button" class="btn btn-primary center-block "><a *ngIf="!isSignedIn" routerLink="/login" class="text-white text-decoration-none">Inicia sesion</a></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+<div class="container">
+
+    <div class="d-flex my-2">
+        <a href="#" routerLink="/peticion/index" class="btn btn-primary">Back</a>
+        <h4 class="ms-4 my-auto">Ver petición</h4>
+    </div>
+   
+    <div>
+        <strong>ID:</strong>
+        <p>{{ peticion.id }}</p>
+    </div>
+   
+    <div>
+        <strong>Titulo:</strong>
+        <p>{{ peticion.titulo }}</p>
+    </div>
+   
+    <div>
+        <strong>Descripcion:</strong>
+        <p>{{ peticion.descripcion }}</p>
+    </div>
+    <div>
+        <strong>Destinatario:</strong>
+        <p>{{ peticion.destinatario }}</p>
+    </div>
+    <div>
+        <strong>Firmantes:</strong>
+        <p>{{ peticion.firmantes }}</p>
+    </div>
+   
+    <div>
+        <strong>Estado:</strong>
+        <p>{{ peticion.estado }}</p>
+    </div>
+
+    <div>
+        <strong>Usuario:</strong>
+        <p>{{ peticion.user_id }}</p>
+    </div>
+
+    <div>
+        <strong>Categoria:</strong>
+        <p>{{ peticion.categoria_id }}</p>
+    </div>
+</div>

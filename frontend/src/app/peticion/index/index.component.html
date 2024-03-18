@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="d-flex my-2">
+      <a href="#" routerLink="/peticion/create/" class="btn btn-success">Create New peticion</a>
+      <h4 class="ms-4 my-auto">Lista de peticiones  </h4>
+  </div>
+
+    <table class="table table-bordered">
+      <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Body</th>
+        <th>Destinatario</th>
+        <th>Firmantes</th>
+        <th>Estado</th>
+
+        <th width="220px">Action</th>
+      </tr>
+      <tr *ngFor="let peticion of peticiones">
+        <td>{{ peticion.id }}</td>
+        <td>{{ peticion.titulo }}</td>
+        <td>{{ peticion.descripcion }}</td>
+        <td>{{ peticion.destinatario }}</td>
+        <td>{{ peticion.firmantes }}</td>
+        <td>{{ peticion.estado }}</td>
+
+        <td>
+          <a href="#" [routerLink]="['/peticion/', peticion.id, 'view']" class="btn btn-info me-2">View</a>
+          <a href="#" [routerLink]="['/peticion/', peticion.id, 'edit']" class="btn btn-primary me-2">Edit</a>
+          <button type="button" (click)="deletePeticion(peticion.id)" class="btn btn-danger">Delete</button>
+        </td>
+      </tr>
+    </table>
+ </div>
